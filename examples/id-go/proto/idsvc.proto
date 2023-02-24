@@ -1,0 +1,13 @@
+syntax="proto3";
+option go_package = "example.com/idsvc";
+
+message Request {
+}
+
+message Response {
+    int64 id = 1;
+}
+
+service idsvc {
+    rpc GetId (Request) returns (Response) {}
+}
